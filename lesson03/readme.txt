@@ -3,3 +3,6 @@ Nội dung buổi học:
 - css
 	- Code tối ưu nhất: có khả tái sử dụng lại cái đã viết
 - connect heroku
+	- tao tai khoan
+	- tao project tren heroku
+	- ket noi project heroku <-> github
