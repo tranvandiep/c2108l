@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bài học css & path trong lập trình web</title>
+
+	<style type="text/css">
+		/*css: selector - tag, id, class name*/
+		/* *: áp dụng cho tất cả các thẻ -> mức uu tiên sử dụng thấp nhất. */
+		* {
+			font-size: 50px;
+			color: orange;
+		}
+
+		/* tag: tên thẻ -> body, li, h1, .v.v */
+		body {
+			background-color: #4ac1f6;
+			background-image: url(photos/snow.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		li {
+			color: yellow;
+			font-size: 20px;
+		}
+
+		h1 {
+			color: red;
+			cursor: pointer;
+			text-transform: capitalize;
+		}
+
+		h1:hover {
+			color: yellow;
+		}
+		h1:active {
+			color: green;
+		}
+
+		#title {
+			font-size: 50px;
+		}
+
+		#subject {
+			color: white;
+			font-size: 30px;
+		}
+
+		/*viết liền*/
+		/*li.group2:  sẽ được hiểu -> thẻ li có class nhận giá trị group2*/
+		li.group2 {
+			color: red;
+			font-size: 35px;
+		}
+
+		/*viết liền*/
+		/*p.group2:  sẽ được hiểu -> thẻ p có class nhận giá trị group2*/
+		p.group2 {
+			color: white;
+			font-size: 55px;
+		}
+
+		/*dấu cách -> space*/
+		/*Nghĩa là: Thẻ con có class là group1 và thẻ chả là ul*/
+		ul .group1 {
+			font-size: 55px;
+		}
+
+		ol .group1 {
+			font-size: 15px;
+		}
+
+		.color-white {
+			color: white !important;
+		}
+		/*!important -> id -> class -> tag -> * */
+		/*Cùng cấp -> thì ưu tiên thuộc tính thiết kế sau*/
+	</style>
+</head>
+<body>
+	<!-- id (identify): gia tri cua no la duy nhat -> giống như cmtnd của các bạn -->
+	<p>Noi dung test</p>
+	<p class="group2">Noi dung test</p>
+	<h1 id="title">Bài học css & path trong lập trình web</h1>
+	<h2 id="subject">Môn học</h2>
+	<ul>
+		<!-- class: giá trị class có thể sử dụng cho nhiều thẻ khác nhau -->
+		<li class="group1">PRE</li>
+		<li class="group1">Lập trình C</li>
+		<li class="group1">Lập trình HTML/CSS/JS</li>
+		<li class="group1">Lập trình AngularJS</li>
+		<li class="group1">SQL Server</li>
+		<li class="group1">PHP/Laravel</li>
+	</ul>
+	<ul>
+		<li class="group2">PRE</li>
+		<li class="group2 color-white">Lập trình C</li>
+		<li class="group2">Lập trình HTML/CSS/JS</li>
+		<li class="group2">Lập trình AngularJS</li>
+		<li class="group2">SQL Server</li>
+		<li class="group2">PHP/Laravel</li>
+	</ul>
+
+	<ol>
+		<li class="group1">PRE</li>
+		<li class="group1">Lập trình C</li>
+		<li class="group1">Lập trình HTML/CSS/JS</li>
+		<li class="group1">Lập trình AngularJS</li>
+		<li class="group1">SQL Server</li>
+		<li class="group1">PHP/Laravel</li>
+	</ol>
+	<img src="https://th.bing.com/th/id/R.1904e2bedcc6ccb87d8752de18485e63?rik=qbEi1GG0poxoYA&riu=http%3a%2f%2fs3.caradvice.com.au%2fwp-content%2fuploads%2f2014%2f12%2faston-martin-db10-front.jpg&ehk=hIHqGG3MHCZr97fM1NJJc4GLVitkmBRGMxfsUQqSbhc%3d&risl=&pid=ImgRaw&r=0" style="width: 640px;">
+
+	<!-- Viet chinh chữ hoa và chữ thường -->
+	<!-- Window: No Error, Linux, Ubuntu: Error -->
+	<img src="photos/car.jfif" style="width: 640px;">
+	<img src="photos/car2.jfif" style="width: 640px;">
+
+	<!-- ../ => ý nghĩa là quay về thư mục cha (parent folder) -->
+	<img src="../photos/car3.jfif" style="width: 640px;">
+</body>
+</html>

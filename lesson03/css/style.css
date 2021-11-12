@@ -1,0 +1,62 @@
+/*css: selector - tag, id, class name*/
+/* *: áp dụng cho tất cả các thẻ -> mức uu tiên sử dụng thấp nhất. */
+* {
+	font-size: 50px;
+	color: orange;
+}
+
+/* tag: tên thẻ -> body, li, h1, .v.v */
+body {
+	background-color: #4ac1f6;
+	background-image: url(../photos/snow.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+li {
+	color: yellow;
+	font-size: 20px;
+}
+
+h1 {
+	color: red;
+}
+
+#title {
+	font-size: 50px;
+}
+
+#subject {
+	color: white;
+	font-size: 30px;
+}
+
+/*viết liền*/
+/*li.group2:  sẽ được hiểu -> thẻ li có class nhận giá trị group2*/
+li.group2 {
+	color: red;
+	font-size: 35px;
+}
+
+/*viết liền*/
+/*p.group2:  sẽ được hiểu -> thẻ p có class nhận giá trị group2*/
+p.group2 {
+	color: white;
+	font-size: 55px;
+}
+
+/*dấu cách -> space*/
+/*Nghĩa là: Thẻ con có class là group1 và thẻ chả là ul*/
+ul .group1 {
+	font-size: 55px;
+}
+
+ol .group1 {
+	font-size: 15px;
+}
+
+.color-white {
+	color: white !important;
+}
+/*!important -> id -> class -> tag -> * */
+/*Cùng cấp -> thì ưu tiên thuộc tính thiết kế sau*/
