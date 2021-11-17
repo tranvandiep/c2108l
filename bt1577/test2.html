@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.showme{ 
+	        display: none;
+	    }
+	    #hideme2 {
+	    	display: none;
+	    }
+	    .showhim:hover .showme{
+	        display : block;
+	    }
+	    .showhim:hover .hideme{
+	        display : none;
+	    }
+	    .showhim:hover ~ #hideme2{ 
+	        display:block;
+	    }
+	</style>
+</head>
+<body>
+<div class="showhim">
+    HOVER ME
+    <div class="showme">hai</div> 
+    <div class="hideme">bye</div>
+</div>
+<span id="hideme2">bye bye</div>
+</body>
+</html>

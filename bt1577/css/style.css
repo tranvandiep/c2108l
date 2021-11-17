@@ -1,0 +1,50 @@
+body {
+	background-color: #FFFFCC;
+}
+
+h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#navigation {
+	position: absolute;
+	/*margin-left: 25%;*/
+	width: 100%;
+	text-align: center;
+}
+
+#tablesectionOne, #tablesectionTwo, #tablesectionThree, #tablesectionFour {
+	position: absolute;
+	text-align: center;
+	background-color: #FFFFDD;
+	table-layout: fixed;
+	margin-top: 7e;
+}
+
+#tablesectionOne, #tablesectionTwo, #tablesectionThree, #tablesectionFour {
+	display: none;
+}
+
+#menu_2:hover ~ #tablesectionOne {
+	display: block;
+}
+/*#menu_2:hover ~ #tablesectionFour {
+	display: none;
+}
+#menu_2:hover ~ #tablesectionThree {
+	display: none;
+}
+#menu_2:hover ~ #tablesectionTwo {
+	display: block;
+}*/
+
+.CAPTION {
+	background-color: rgb(255,185,115);
+	font-size: 1em;
+}
+
+th, td {
+	border: solid #D0D0D0 1px;
+	empty-cells: show;
+}

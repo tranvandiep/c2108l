@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Layout Page</title>
+	<style type="text/css">
+		body {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.cotainer {
+			background-color: red;
+			width: 100%;
+			height: 1000px;
+		}
+
+		.menu {
+			background-color: green;
+			width: 100%;
+			display: flex;
+		}
+
+		.main {
+			background-color: blue;
+			width: 100%;
+			height: 900px;
+			display: flex;
+			font-size: 30px;
+			color: white;
+		}
+
+		.main .menu-left {
+			background-color: black;
+			width: 25%;
+			height: 900px;
+			/*float: left;*/
+		}
+
+		.main .main-content {
+			background-color: yellow;
+			width: 50%;
+			height: 900px;
+			/*float: left;*/
+		}
+
+		.main .menu-right {
+			background-color: pink;
+			width: 25%;
+			height: 900px;
+			/*float: left;*/
+		}
+
+		.menu ul {
+			list-style-type: none;
+			display: flex;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.menu ul li {
+			padding: 15px;
+			font-size: 14px;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+
+		.menu ul li:hover {
+			background-color: yellow;
+		}
+
+		.menu ul li:active {
+			background-color: red;
+		}
+
+		.menu .right {
+			position: absolute;
+			right: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="cotainer">
+		<div class="menu">
+			<ul>
+				<li>Trang Chu</li>
+				<li>Lap Trinh C</li>
+				<li>Frontend</li>
+				<li>Backend</li>
+				<li>Java</li>
+				<li>Android</li>
+				<li>C Sharp</li>
+			</ul>
+			<ul class="right">
+				<li>Đăng Ký</li>
+				<li>Đăng Nhập</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="menu-left">
+				Noi dung
+			</div>
+			<div class="main-content">
+				Noi dung
+			</div>
+			<div class="menu-right">
+				Noi dung
+			</div>
+		</div>
+	</div>
+</body>
+</html>
