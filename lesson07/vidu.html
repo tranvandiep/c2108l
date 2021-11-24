@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Page</title>
+</head>
+<body>
+	<!-- method: POST/GET -> cach gui du lieu (PHP/Laravel) -->
+	<form method="post">
+		<label>Ho & Ten</label>
+		<input required title="Yeu cau nhap ten nguoi dung" type="text" name="fullname" id="fullname" placeholder="Nhap ho & ten" autofocus="true" minlength="5" maxlength="50">
+		<br/><br/>
+
+		<label>Tuoi</label>
+		<input required type="number" min="0" max="100" name="age" id="age" placeholder="Nhap tuoi">
+		<br/><br/>
+
+		<label>Email</label>
+		<input required type="email" name="email" id="email">
+		<br/><br/>
+
+		<label>Phone</label>
+		<input required type="tel" name="phone_number" id="phone_number" pattern="[+0-9. ]{9,16}">
+		<br/><br/>
+
+		<label>Birthday</label>
+		<input type="date" name="birthday" id="birthday">
+		<br/><br/>
+
+		<label>Color</label>
+		<input type="color" name="test_color" id="color_id">
+
+		<br/><br/>
+		<label>Gioi Tinh</label>
+		<select>
+			<option value="">-- Lua chon gioi tinh --</option>
+			<option value="Nam">Nam</option>
+			<option value="Nu">Nu</option>
+		</select>
+
+		<input type="text" name="country" list="country_list">
+		<datalist id="country_list">
+			<option value="Viet Nam 1" />
+			<option value="Viet Nam 2" />
+			<option value="Viet Nam 3" />
+			<option value="Viet Nam 4" />
+			<option value="Viet Nam 5" />
+		</datalist>
+
+		<br/><br/>
+		<label>Gioi Tinh</label>
+		<input type="radio" value="Nam" name="gender"> Nam
+		<input type="radio" value="Nu" name="gender"> Nu
+
+		<br/><br/>
+		<label>Gioi Tinh</label>
+		<input type="checkbox" value="Nam" name="gender"> Nam
+		<input type="checkbox" value="Nu" name="gender"> Nu
+
+		<br/><br/>
+		<!-- type: button, submit, reset -->
+		<input type="submit" value="Submit Data">
+		<!-- button: type -> rong -> default: submit -->
+		<button type="reset">Reset Data</button>
+	</form>
+</body>
+</html>
